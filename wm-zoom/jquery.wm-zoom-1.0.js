@@ -264,7 +264,10 @@
                             'width' : lensWidth,
                             'height' : lensHeight
                         });
-
+                        
+                        // fix the sizes, if the $el was previously invisible.
+                        setBoxesSize();
+                        
                         // get relative pointer position
                         xPosition = (e.pageX - pOffset.left),
                         yPosition = (e.pageY - pOffset.top);
